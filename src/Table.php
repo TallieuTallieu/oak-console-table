@@ -108,7 +108,6 @@ class Table
     public function output()
     {
         // First we determine the width of each column
-
         $colCount = count($this->headers);
         $colWidths = [];
 
@@ -124,7 +123,6 @@ class Table
         }
 
         // Now we output the table
-
         $this->drawHorizontalBorder($colWidths);
         $this->drawHeader($colWidths);
         $this->drawHorizontalBorder($colWidths);
