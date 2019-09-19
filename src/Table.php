@@ -102,9 +102,13 @@ class Table
         $this->output->newline();
     }
 
+    /**
+     * Outputs the table
+     */
     public function output()
     {
         // First we determine the width of each column
+
         $colCount = count($this->headers);
         $colWidths = [];
 
@@ -114,6 +118,12 @@ class Table
                 $colWidths[$i] = max($colWidths[$i] ?? 0, strlen($value));
             }
         }
+
+        foreach ($this->headers as $i => $header) {
+            $colWidths[$i] = max($colWidths[$i] ?? 0, strlen($header));
+        }
+
+        // Now we output the table
 
         $this->drawHorizontalBorder($colWidths);
         $this->drawHeader($colWidths);
