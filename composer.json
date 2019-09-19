@@ -1,0 +1,14 @@
+{
+  "name": "reinvanoyen/oak-console-table",
+  "description": "Console tables for Oak commands",
+  "type": "library",
+  "minimum-stability": "dev",
+  "require": {
+    "reinvanoyen/oak": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tnt\\ConsoleTable\\": "src/"
+    }
+  }
+}
