@@ -4,7 +4,7 @@
 #### Installation
 
 ```ssh
-composer require reinvanoyen/oak-console-table
+composer require tallieutallieu/oak-console-table
 ```
 
 #### Example usage
